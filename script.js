@@ -36,10 +36,10 @@ function rot13(encodedStr) {
 	encodedStr=encodedStr.toUpperCase();
 	for(let i=0;i<encodedStr.length;i++){
 		if(lookup[encodedStr[i]]){
-			decodedArr[0]+=lookup[encodedStr[i]];
+			decodedArr+=lorokup[encodedStr[i]];
 		}
 		else{
-			decodedArr[0]+=encodedStr[i];
+			decodedArr+=encodedStr[i];
 		}	
 	}
   return decodedArr; //return decodedArr
